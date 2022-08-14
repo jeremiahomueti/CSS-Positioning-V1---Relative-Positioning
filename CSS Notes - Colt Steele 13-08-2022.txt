@@ -1,0 +1,82 @@
+CSS POSITIONING TYPES
+
+CSS positioning comes in four (4) basic types.
+
+- Static (Default): All elments by default come with the static CSS position.
+- Relative
+- Absolute
+- Fixed
+- Sticky [New]: Sticky isn't supported in all web browsers. 
+
+CSS POSITIONING KEYWORDS
+Whenever you are positioning elements in CSS, you're always positioning them based
+on the following four keywords:
+-Top
+-Right
+-Bottom
+-Left
+
+You can use pixels, you can use ems, you can use percentages..., but whatever you
+use, you are always going to be moving an element, based on its Top, Right, Bottom,
+or Left position.
+
+
+CSS POSITIONING "OFFSET"
+Whenever you are positioning elements in CSS, you are always "offsetting" from the 
+keyword you use.
+
+So for example:
+.h1   {
+		position: relative;
+		top: 100px;
+	}
+
+What this means is that the h1 element is going to be pushed away from the Top
+based on the value you put there, in this case, 100px.
+
+A key point to note is that positive values offset inward; whereas negative values
+offset outward.
+
+So 100pixels from the Top is downward. Whereas, -100pixels from the Top will offset
+outward. Resulting in an actual upward movement in the element.
+
+Be it Top, Right, Bottom, or Left, +ve values offset inwards; whereas, negative 
+values offset outward.
+
+....................................................................................
+....................................................................................
+
+
+
+RELATIVE CSS POSITIONING CONTEXT
+
+Relative CSS Position, is positioned against ITSELF - or its original position.
+
+
+********************
+********************
+DOCUMENT FLOW (BLOCK)
+
+Let's go ahead and look at a quick topic we need to understand which is called 
+the "document flow." Now, whenever you are using a CSS positioning, or positioning
+a CSS element, you are modifying the normal document flow of the document.
+
+
+Just as a refresher, tags come in different varieties, but by defaults, a lot of 
+the tags are what we call block level tags.
+Block level tags are like divs, paragraphs, lists, - they take up an entire block 
+of space, or row, in the page where they stand. They are never juxstapositioned
+beside each other.
+The next set of tags are called IN-LINE TAGS. They are things like images, links, 
+inputs, etc. They juxtaposition themselves beside each other until the line is 
+full, then they extend into the next line.
+
+It's important to mention that this is just their default nature - but these can 
+be changed in CSS.
+
+The basics are in-line and block.
+
+
+Relative positioning does not displace the flow of elements in the flow. So 
+that is, relative positioning, does not displace elements in the document 
+flow.
