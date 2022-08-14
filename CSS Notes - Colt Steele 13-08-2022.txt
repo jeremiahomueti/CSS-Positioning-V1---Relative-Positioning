@@ -80,3 +80,7 @@ The basics are in-line and block.
 Relative positioning does not displace the flow of elements in the flow. So 
 that is, relative positioning, does not displace elements in the document 
 flow.
+
+
+
+So, as far as the other elements in your document are concerned, the top box1 element we moved down-left, is still in its position. So the elements below it do not immediately move up to cover the position it previously occupied. That is one peculiarity of the Relative positioning. The document flow remains or is immutable.
